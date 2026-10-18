@@ -1,26 +1,36 @@
-# ESLint Sharable Config Boilerplate
+# eslint-config-boilerplate
 
-This repository provides a starter for creating a sharable ESLint config.
+Eslint Sharable Config Boilerplate
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+## Get Started
+
+- Clone this repository
+  `git clone https://github.com/maddhruv/eslint-config-boilerplate`
+
+- Change `index.js` with your _eslint_ configuration and settings
+
+- Modify the package name in `package.json` and publish
 
 ## Usage
 
-1. Install (example):
-   ```bash
-   npm install --save-dev eslint your-config-package
-   ```
+Sharable Eslint Configs can be used by adding the config name to the `extends` property in your eslint-config or eslintrc.
 
-2. Enable in your project .eslintrc:
-   ```json
-   {
-     "extends": "your-config-package"
-   }
-   ```
+```js
+extends: [
+  "config-name"
+]
+```
 
-## Customizing
+## Author
 
-- Modify the rules in `.eslintrc.js` to fit your style guide.
-- Add plugin dependencies to package.json as needed (e.g. `eslint-plugin-react`, `@typescript-eslint/eslint-plugin`).
+- [Dhruv Jain](https://github.com/maddhruv) <dhruvjainpenny@gmail.com>
 
-## Contributing
+## Reference
 
-- Create a branch for your changes, run tests/lint, and open a pull request targeting `master`.
+- [https://eslint.org/docs/developer-guide/shareable-configs](https://eslint.org/docs/developer-guide/shareable-configs)
+
+## Used at
+
+- [ClearTax/eslint-config](https://github.com/ClearTax/eslint-config)
